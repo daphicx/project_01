@@ -2,8 +2,8 @@
 
  function About() {
   return (
-  <div>
-  about
+<div className='text-center w-full text-white text-2xl bg-red-400 p-5'>
+  coming soon
   </div>
   )
 }

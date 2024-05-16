@@ -9,7 +9,7 @@ function Navbar() {
 
   <nav className='flex relative justify-between items-center px-5 py-3 shadow font-sans'>
   <h1 className='font-bold text-lg/6 text-gray-300'><Link to="/">Umbire</Link></h1>
-  <ul className={`flex flex-col gap-10  items-center absolute bg-white shadow p-5 h-80 transition duration-150 ease-in-out w-screen inset-0  overflow-hidden  ${!isClicked ? 'hidden' :''} md:flex-row md:relative`}>
+  <ul className={`flex flex-col gap-10  items-center absolute bg-white shadow p-10 h-80 transition duration-150 ease-in-out w-screen inset-0  overflow-hidden  ${!isClicked ? 'hidden' :''} md:flex-row md:relative`}>
           <li className='text-gray-300 font-bold hover:text-blue-900'>
             <Link to="/">Home</Link>
           </li>
@@ -27,9 +27,9 @@ function Navbar() {
         <div className='flex items-center gap-3'>
          <button type='button' className=' px-4 py-2 bg-blue-900 font- font-bold text-white text-sm/6 rounded-lg focus:ring  hover:bg-blue-800' > Login </button>
         
-        <p className={`bg-black text-white ${isClicked ? 'hidden' : ''}`} onClick={()=>{setIsClicked(true)}}>5</p>
+        <p className={`pt-2 ${isClicked ? 'hidden' : ''}`} onClick={()=>{setIsClicked(true)}}><ion-icon name="menu" size='large'></ion-icon></p>
         
-        <p className={`bg-black text-white ${!isClicked ? 'hidden' : 'absolute right-5'}`} onClick={()=>{setIsClicked(false)}}>x</p>
+        <p className={` pt-2 ${!isClicked ? 'hidden' : 'absolute right-5'}`} onClick={()=>{setIsClicked(false)}}><ion-icon name="close" size='large'></ion-icon></p>
 
         </div>
         
